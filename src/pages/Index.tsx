@@ -1,13 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/Hero";
+import Problems from "@/components/Problems";
+import Solution from "@/components/Solution";
+import LeadMagnet from "@/components/LeadMagnet";
+import Pricing from "@/components/Pricing";
+import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
+import Footer from "@/components/Footer";
+import VoiceflowChat from "@/components/VoiceflowChat";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <Problems />
+      <Solution />
+      <LeadMagnet />
+      <Pricing />
+      <About />
+      <Testimonials />
+      <FAQ />
+      <CalendlyEmbed />
+      <Footer />
+      <VoiceflowChat />
+    </main>
   );
 };
 
