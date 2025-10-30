@@ -60,18 +60,18 @@ const Footer = () => {
             <h4 className="text-lg font-bold">Contacto</h4>
             <div className="space-y-3">
               <a 
-                href="mailto:contacto@adquantic.com" 
+                href="mailto:adquantic@adquantic.es" 
                 className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                contacto@adquantic.com
+                adquantic@adquantic.es
               </a>
               <a 
-                href="tel:+34600000000" 
+                href="tel:+34623392135" 
                 className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                +34 600 000 000
+                +34 623 39 21 35
               </a>
               <div className="flex items-center gap-2 text-white/80">
                 <MapPin className="w-5 h-5" />
@@ -81,13 +81,13 @@ const Footer = () => {
             
             <div className="pt-4">
               <a 
-                href="https://www.linkedin.com/company/adquantic" 
+                href="https://www.linkedin.com/in/david-martinez-castellar-666381223/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-white/80 hover:text-accent transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
-                Síguenos en LinkedIn
+                Conéctate en LinkedIn
               </a>
             </div>
           </div>

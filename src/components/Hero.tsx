@@ -4,11 +4,16 @@ import heroDashboard from "@/assets/hero-dashboard.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden gradient-hero py-20 md:py-32">
-      {/* Background decorative elements */}
+    <section className="relative overflow-hidden py-20 md:py-32">
+      {/* Dynamic gradient background with overlay */}
+      <div className="absolute inset-0 gradient-hero" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-primary-glow/20 via-transparent to-transparent" />
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+      
+      {/* Animated floating elements */}
+      <div className="absolute top-20 right-20 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 left-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -20,7 +25,8 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Genera Leads Cualificados y Automatiza tu Agencia Inmobiliaria
+              ¿Sigues Perdiendo Clientes Mientras tu Competencia Crece con IA?
+              <span className="block text-accent mt-2">Deja de Dejarlo para Mañana</span>
             </h1>
             
             <p className="text-xl text-white/90 leading-relaxed">
