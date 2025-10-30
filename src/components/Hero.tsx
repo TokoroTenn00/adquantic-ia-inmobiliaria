@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Tu competencia ya gana leads con IA. ¿Te vas quedar atrás?
+              Tu competencia ya gana <span className="text-accent">leads con IA.</span> ¿Te vas quedar atrás?
             </h1>
             
             <p className="text-xl text-white/90 leading-relaxed">
