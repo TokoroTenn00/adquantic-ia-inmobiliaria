@@ -25,14 +25,11 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              ¿Sigues Perdiendo Clientes Mientras tu Competencia Crece con IA?
-              <span className="block text-accent mt-2">Deja de Dejarlo para Mañana</span>
+              Tu competencia ya gana leads con IA. ¿Te vas quedar atrás?
             </h1>
             
             <p className="text-xl text-white/90 leading-relaxed">
-              Ayudamos a agencias inmobiliarias pequeñas y medianas en España a escalar con 
-              <span className="text-accent font-semibold"> marketing digital impulsado por IA</span>, 
-              de forma asequible y personalizada. Sin expertise técnico. Sin costos desorbitados.
+              Deja de perder oportunidades por no adaptarte al nuevo mercado inmobiliario. Te ayudamos a digitalizar tu agencia paso a paso, sin complicaciones y con resultados medibles desde las primeras semanas.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -73,7 +70,7 @@ const Hero = () => {
           </div>
           
           {/* Image */}
-          <div className="relative animate-float">
+          <div className="relative flex items-center">
             <div className="absolute inset-0 bg-accent/20 rounded-2xl blur-2xl" />
             <img 
               src={heroDashboard} 
