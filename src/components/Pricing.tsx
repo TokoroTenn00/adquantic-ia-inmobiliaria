@@ -10,7 +10,7 @@ const plans = [
     features: [
       "Landing page para comprador/vendedor",
       "1 campaña Meta Ads (presupuesto a tu elección)",
-      "2 fotografías con Home Staging digital",
+      "Home Staging de 2 viviendas",
       "Auditoría completa de web",
       "Optimización de redes sociales (bio, diseño, enlaces)",
     ],
@@ -28,7 +28,7 @@ const plans = [
       "2 landing pages optimizadas con copy persuasivo",
       "2 campañas Meta Ads (compradores + vendedores)",
       "CRM Básico incluido",
-      "4 fotografías con Home Staging",
+      "Home Staging de 4 viviendas",
       "Optimización semanal de propiedades",
       "Soporte prioritario por WhatsApp",
       "Exclusividad de zona",
