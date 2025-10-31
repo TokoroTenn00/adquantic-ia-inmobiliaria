@@ -80,7 +80,7 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <div 
               key={index}
-              className={`relative bg-card rounded-2xl p-8 border-2 transition-all hover:shadow-strong ${
+              className={`relative bg-card rounded-2xl p-8 border-2 transition-all hover:shadow-strong h-full ${
                 plan.popular 
                   ? 'border-accent shadow-medium scale-105 lg:scale-110' 
                   : 'border-border shadow-soft hover:-translate-y-2'
@@ -93,7 +93,7 @@ const Pricing = () => {
                 </div>
               )}
               
-              <div className="space-y-6">
+              <div className="flex flex-col h-full space-y-6">
                 <div>
                   <h3 className="text-2xl font-bold text-foreground mb-2">
                     {plan.name}
@@ -125,7 +125,7 @@ const Pricing = () => {
                 </ul>
                 
                 <Button 
-                  className={`w-full py-6 text-lg font-semibold transition-all hover:scale-105 ${
+                  className={`w-full py-6 text-lg font-semibold transition-all hover:scale-105 mt-auto ${
                     plan.popular
                       ? 'gradient-accent text-white shadow-glow'
                       : 'bg-primary hover:bg-primary/90 text-primary-foreground'
