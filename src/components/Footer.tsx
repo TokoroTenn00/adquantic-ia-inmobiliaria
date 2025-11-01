@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin, Instagram, Facebook, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -80,15 +80,44 @@ const Footer = () => {
             </div>
             
             <div className="pt-4">
-              <a 
-                href="https://www.linkedin.com/in/david-martinez-castellar-666381223/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/80 hover:text-accent transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-                Conéctate en LinkedIn
-              </a>
+              <div className="flex items-center gap-4">
+                <a 
+                  href="https://www.linkedin.com/in/david-martinez-castellar-666381223/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-accent transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/ad_quantic/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-accent transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61581300164887" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-accent transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://wa.link/ymmoph" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-accent transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
