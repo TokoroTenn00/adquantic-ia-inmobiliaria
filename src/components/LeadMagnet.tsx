@@ -38,7 +38,7 @@ const LeadMagnet = () => {
                 <ul className="space-y-2 ml-8">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Análisis completo de tu web y redes sociales</span>
+                    <span>Análisis completo de tu página web</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
@@ -59,15 +59,15 @@ const LeadMagnet = () => {
                 <ul className="space-y-2 ml-8">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Ebook: "10 Estrategias de Meta Ads para Inmobiliarias"</span>
+                    <span>Ebook: "10 errores que hacen que una inmobiliaria pierda clientes"</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Ebook: "Guía Completa de Chatbots con IA"</span>
+                    <span>Ebook: "De inmobiliaria tradicional a marca local líder"</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">•</span>
-                    <span>Ebook: "SEO Local para Agencias Inmobiliarias"</span>
+                    <span>Ebook: "Guía práctica para generar contactos"</span>
                   </li>
                 </ul>
               </div>
@@ -83,7 +83,7 @@ const LeadMagnet = () => {
               <Button 
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-white text-lg px-12 py-6 shadow-glow transition-all hover:scale-105"
-                onClick={() => window.open('https://calendly.com/adquantic/30min', '_blank')}
+                onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}
               >
                 Solicitar Mi Auditoría Express Ahora
               </Button>
