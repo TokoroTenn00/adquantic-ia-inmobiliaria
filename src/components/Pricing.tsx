@@ -14,7 +14,7 @@ const plans = [
       "Auditoría completa de web",
       "Optimización de redes sociales (bio, diseño, enlaces)",
     ],
-    cta: "Empezar Ahora",
+    cta: "Más información",
     popular: false
   },
   {
@@ -34,7 +34,7 @@ const plans = [
       "Exclusividad de zona",
       "Llamada estratégica mensual (30 min)"
     ],
-    cta: "Agenda una Llamada",
+    cta: "Más información",
     popular: true
   },
   {
@@ -54,7 +54,7 @@ const plans = [
       "Email marketing automatizado",
       "Gestión de reputación y reseñas Google"
     ],
-    cta: "Solicitar Demo",
+    cta: "Más información",
     popular: false
   }
 ];
