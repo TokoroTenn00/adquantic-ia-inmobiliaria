@@ -46,6 +46,7 @@ const Hero = () => {
                 size="lg" 
                 variant="outline"
                 className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6 transition-all hover:scale-105"
+                onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}
               >
                 Auditoría Express - 47€
               </Button>
