@@ -93,39 +93,41 @@ const Pricing = () => {
                 </div>
               )}
               
-              <div className="flex flex-col h-full space-y-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">
-                    {plan.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    {plan.description}
-                  </p>
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-4xl font-bold text-accent">
-                      {plan.price}
-                    </span>
-                    <span className="text-muted-foreground">
-                      {plan.period}
-                    </span>
+              <div className="flex flex-col h-full">
+                <div className="space-y-6 flex-grow">
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      {plan.name}
+                    </h3>
+                    <p className="text-muted-foreground text-sm mb-4">
+                      {plan.description}
+                    </p>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl font-bold text-accent">
+                        {plan.price}
+                      </span>
+                      <span className="text-muted-foreground">
+                        {plan.period}
+                      </span>
+                    </div>
                   </div>
+                  
+                  <ul className="space-y-3">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="bg-accent/10 p-1 rounded-full flex-shrink-0 mt-0.5">
+                          <Check className="w-4 h-4 text-accent" />
+                        </div>
+                        <span className="text-sm text-foreground leading-relaxed">
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 
-                <ul className="space-y-3">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="bg-accent/10 p-1 rounded-full flex-shrink-0 mt-0.5">
-                        <Check className="w-4 h-4 text-accent" />
-                      </div>
-                      <span className="text-sm text-foreground leading-relaxed">
-                        {feature}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                
                 <Button 
-                  className={`w-full py-6 text-lg font-semibold transition-all hover:scale-105 mt-auto ${
+                  className={`w-full py-6 text-lg font-semibold transition-all hover:scale-105 mt-6 ${
                     plan.popular
                       ? 'gradient-accent text-white shadow-glow'
                       : 'bg-primary hover:bg-primary/90 text-primary-foreground'
