@@ -48,6 +48,7 @@ const plans = [
       "Rebranding de logo profesional",
       "Optimización SEO local completa",
       "Creación y gestión de marca",
+      "4 Blog mensuales",
       "Automatización avanzada de procesos",
       "CRM Avanzado con pipelines personalizados",
       "Estrategia de posicionamiento local",
