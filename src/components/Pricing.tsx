@@ -5,7 +5,7 @@ const plans = [
   {
     name: "Pack Básico",
     price: "250€",
-    period: "/mes",
+    period: "",
     description: "Ideal para empezar a generar leads digitales",
     features: [
       "Landing page para comprador/vendedor",
