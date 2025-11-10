@@ -45,7 +45,7 @@ const plans = [
     description: "Solución completa para dominar tu mercado local",
     features: [
       "Todo lo del Pack Intermedio",
-      "Chatbot avanzado con IA conectado a tu BD",
+      "Chatbot con IA 24/7 conectado a tu base de datos",
       "Rebranding de logo profesional",
       "Optimización SEO local completa",
       "Creación y gestión de marca",
