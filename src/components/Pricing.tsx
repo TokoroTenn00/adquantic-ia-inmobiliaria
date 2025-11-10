@@ -30,7 +30,7 @@ const plans = [
       "2 campañas Meta Ads (compradores + vendedores)",
       "CRM Básico incluido",
       "Home Staging de 4 viviendas",
-      "Optimización semanal de propiedades",
+      "Optimización SEO de nuevas propiedades",
       "Soporte prioritario por WhatsApp",
       "Exclusividad de zona",
       "Llamada estratégica mensual (30 min)"
