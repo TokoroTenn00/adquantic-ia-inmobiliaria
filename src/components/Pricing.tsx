@@ -13,6 +13,7 @@ const plans = [
       "Home Staging de 2 viviendas",
       "Auditoría completa de web",
       "Optimización de redes sociales (bio, diseño, enlaces)",
+      "Calendario optimizado de publicaciones de 30 días para IG y LinkedIn",
     ],
     cta: "Más información",
     popular: false
