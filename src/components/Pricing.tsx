@@ -158,8 +158,8 @@ const Pricing = () => {
         </div>
 
         {/* Roadmap Section */}
-        <div className="mt-24 max-w-5xl mx-auto">
-          <div className="text-center mb-12">
+        <div className="mt-24 max-w-4xl mx-auto">
+          <div className="text-center mb-16">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               ¿Cómo Trabajamos Contigo?
             </h3>
@@ -168,55 +168,71 @@ const Pricing = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                number: "1",
-                title: "Primera reunión",
-                description: "Descubrimos tus necesidades y problemas."
-              },
-              {
-                number: "2",
-                title: "Análisis personalizado",
-                description: "Estudiamos tu caso y buscamos soluciones específicas."
-              },
-              {
-                number: "3",
-                title: "Propuesta a medida",
-                description: "Estudiado tu caso, apuntamos solo a lo que realmente te afecta."
-              },
-              {
-                number: "4",
-                title: "Implementación",
-                description: "Realizamos todo el trabajo de forma remota, nosotros nos encargamos de todo."
-              },
-              {
-                number: "5",
-                title: "Seguimiento",
-                description: "Llamada estratégica mensual para medir retorno y revisiones."
-              }
-            ].map((step, index) => (
-              <div 
-                key={index}
-                className={`bg-card border border-border rounded-xl p-6 hover:border-accent/50 transition-all hover:shadow-medium ${
-                  index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
-                }`}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 text-accent w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
-                    {step.number}
+          <div className="relative">
+            {/* Vertical Progress Bar */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-border -translate-x-1/2 hidden md:block" />
+            <div className="absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-accent via-accent to-accent/20 -translate-x-1/2 hidden md:block" 
+                 style={{ height: '100%' }} />
+
+            {/* Steps */}
+            <div className="space-y-12 md:space-y-16">
+              {[
+                {
+                  number: "1",
+                  title: "Primera reunión",
+                  description: "Descubrimos tus necesidades y problemas."
+                },
+                {
+                  number: "2",
+                  title: "Análisis personalizado",
+                  description: "Estudiamos tu caso y buscamos soluciones específicas."
+                },
+                {
+                  number: "3",
+                  title: "Propuesta a medida",
+                  description: "Estudiado tu caso, apuntamos solo a lo que realmente te afecta."
+                },
+                {
+                  number: "4",
+                  title: "Implementación",
+                  description: "Realizamos todo el trabajo de forma remota, nosotros nos encargamos de todo."
+                },
+                {
+                  number: "5",
+                  title: "Seguimiento",
+                  description: "Llamada estratégica mensual para medir retorno y revisiones."
+                }
+              ].map((step, index) => (
+                <div 
+                  key={index}
+                  className={`relative flex items-center gap-8 ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
+                >
+                  {/* Content Card */}
+                  <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
+                    <div className="bg-card border border-border rounded-xl p-6 hover:border-accent/50 transition-all hover:shadow-medium inline-block w-full md:max-w-md">
+                      <h4 className="font-bold text-foreground mb-2 text-lg">
+                        {step.title}
+                      </h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">
-                      {step.title}
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {step.description}
-                    </p>
+
+                  {/* Center Circle */}
+                  <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 z-10">
+                    <div className="bg-accent w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl text-white shadow-glow border-4 border-background">
+                      {step.number}
+                    </div>
                   </div>
+
+                  {/* Spacer for alternating layout */}
+                  <div className="flex-1 hidden md:block" />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
