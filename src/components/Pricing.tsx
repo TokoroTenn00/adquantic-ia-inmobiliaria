@@ -156,6 +156,69 @@ const Pricing = () => {
             Hablemos de tu Caso Específico
           </Button>
         </div>
+
+        {/* Roadmap Section */}
+        <div className="mt-24 max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              ¿Cómo Trabajamos Contigo?
+            </h3>
+            <p className="text-muted-foreground">
+              Un proceso claro y sin sorpresas, diseñado para obtener resultados desde el primer día
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                number: "1",
+                title: "Primera reunión",
+                description: "Descubrimos tus necesidades y problemas."
+              },
+              {
+                number: "2",
+                title: "Análisis personalizado",
+                description: "Estudiamos tu caso y buscamos soluciones específicas."
+              },
+              {
+                number: "3",
+                title: "Propuesta a medida",
+                description: "Estudiado tu caso, apuntamos solo a lo que realmente te afecta."
+              },
+              {
+                number: "4",
+                title: "Implementación",
+                description: "Realizamos todo el trabajo de forma remota, nosotros nos encargamos de todo."
+              },
+              {
+                number: "5",
+                title: "Seguimiento",
+                description: "Llamada estratégica mensual para medir retorno y revisiones."
+              }
+            ].map((step, index) => (
+              <div 
+                key={index}
+                className={`bg-card border border-border rounded-xl p-6 hover:border-accent/50 transition-all hover:shadow-medium ${
+                  index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
+                }`}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/10 text-accent w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                    {step.number}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground mb-2">
+                      {step.title}
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
