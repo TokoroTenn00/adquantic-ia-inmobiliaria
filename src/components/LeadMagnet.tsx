@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Gift, CheckCircle2, Sparkles } from "lucide-react";
-
 const LeadMagnet = () => {
-  return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-accent/20 relative overflow-hidden">
+  return <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-accent/20 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
       <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-accent/20 rounded-full blur-3xl" />
@@ -80,13 +78,7 @@ const LeadMagnet = () => {
                 <span className="bg-accent/30 px-3 py-1 rounded-full text-sm font-semibold">Ahorra 147€</span>
               </div>
               
-              <Button 
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-white text-lg px-12 py-6 shadow-glow transition-all hover:scale-105"
-                onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}
-              >
-                Solicitar Mi Auditoría Express Ahora
-              </Button>
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-12 py-6 shadow-glow transition-all hover:scale-105" onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}>Solicitar Auditoría Express</Button>
               
               <p className="text-sm text-white/70">
                 ✓ Entrega en 48-72 horas • ✓ Sin compromiso • ✓ Garantía de satisfacción
@@ -95,8 +87,6 @@ const LeadMagnet = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LeadMagnet;
