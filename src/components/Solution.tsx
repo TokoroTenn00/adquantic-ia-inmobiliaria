@@ -1,32 +1,24 @@
 import { Target, Zap, TrendingUp, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const solutions = [
-  {
-    icon: Target,
-    title: "Lead Generation Inteligente",
-    description: "Campañas de Meta Ads optimizadas con IA que atraen compradores y vendedores cualificados a tus landing pages personalizadas."
-  },
-  {
-    icon: Zap,
-    title: "Automatización con IA",
-    description: "Chatbots avanzados, CRM automatizado y procesos optimizados para que tu equipo se enfoque en cerrar ventas, no en tareas repetitivas."
-  },
-  {
-    icon: TrendingUp,
-    title: "Marketing Digital Personalizado",
-    description: "Gestión de redes sociales, SEO local, email marketing y home staging digital adaptados a tu zona y propiedades específicas."
-  },
-  {
-    icon: Shield,
-    title: "Soporte y Exclusividad Local",
-    description: "Atención prioritaria por WhatsApp, llamadas estratégicas mensuales y exclusividad de zona para que no compitas con otros clientes nuestros."
-  }
-];
-
+const solutions = [{
+  icon: Target,
+  title: "Lead Generation Inteligente",
+  description: "Campañas de Meta Ads optimizadas con IA que atraen compradores y vendedores cualificados a tus landing pages personalizadas."
+}, {
+  icon: Zap,
+  title: "Automatización con IA",
+  description: "Chatbots avanzados, CRM automatizado y procesos optimizados para que tu equipo se enfoque en cerrar ventas, no en tareas repetitivas."
+}, {
+  icon: TrendingUp,
+  title: "Marketing Digital Personalizado",
+  description: "Gestión de redes sociales, SEO local, email marketing y home staging digital adaptados a tu zona y propiedades específicas."
+}, {
+  icon: Shield,
+  title: "Soporte y Exclusividad Local",
+  description: "Atención prioritaria por WhatsApp, llamadas estratégicas mensuales y exclusividad de zona para que no compitas con otros clientes nuestros."
+}];
 const Solution = () => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
           <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -42,11 +34,7 @@ const Solution = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {solutions.map((solution, index) => (
-            <div 
-              key={index}
-              className="text-center space-y-4 p-6 rounded-xl hover:bg-accent/5 transition-all"
-            >
+          {solutions.map((solution, index) => <div key={index} className="text-center space-y-4 p-6 rounded-xl hover:bg-accent/5 transition-all">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full gradient-accent shadow-glow mx-auto">
                 <solution.icon className="w-8 h-8 text-white" />
               </div>
@@ -56,8 +44,7 @@ const Solution = () => {
               <p className="text-muted-foreground leading-relaxed">
                 {solution.description}
               </p>
-            </div>
-          ))}
+            </div>)}
         </div>
         
         <div className="bg-gradient-to-br from-primary to-primary/90 rounded-2xl p-8 md:p-12 text-center text-white shadow-strong">
@@ -68,17 +55,9 @@ const Solution = () => {
             Nuestros clientes experimentan un <span className="text-accent font-bold">aumento promedio del 40%</span> en leads cualificados 
             en los primeros 3 meses, con procesos automatizados que ahorran hasta <span className="text-accent font-bold">15 horas semanales</span>.
           </p>
-          <Button 
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-glow transition-all hover:scale-105"
-            onClick={() => window.open('https://calendly.com/adquantic/30min', '_blank')}
-          >
-            Descubre Cómo Podemos Ayudarte
-          </Button>
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-glow transition-all hover:scale-105" onClick={() => window.open('https://calendly.com/adquantic/30min', '_blank')}>Así lo hacemos</Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Solution;
