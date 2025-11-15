@@ -16,8 +16,7 @@ const LeadMagnet = () => {
           
           {/* Urgency notice */}
           <div className="bg-red-600 border-2 border-red-400 rounded-lg px-6 py-3 max-w-2xl mx-auto animate-pulse">
-            <p className="text-white font-bold text-center">
-              ⚠️ PLAZAS LIMITADAS: Solo realizamos <span className="underline">5 auditorías este mes</span> y <span className="underline">máximo 1 por zona/pueblo</span>
+            <p className="text-white font-bold text-center">⚠️ PLAZAS LIMITADAS: Solo 5 auditorías este mes y máximo 1 por zona/pueblo<span className="underline">5 auditorías este mes</span> y <span className="underline">máximo 1 por zona/pueblo</span>
             </p>
           </div>
           
