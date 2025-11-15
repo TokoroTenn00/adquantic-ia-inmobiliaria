@@ -14,6 +14,13 @@ const LeadMagnet = () => {
             <span className="text-sm font-semibold">Oferta Especial de Lanzamiento</span>
           </div>
           
+          {/* Urgency notice */}
+          <div className="bg-red-600 border-2 border-red-400 rounded-lg px-6 py-3 max-w-2xl mx-auto animate-pulse">
+            <p className="text-white font-bold text-center">
+              ⚠️ PLAZAS LIMITADAS: Solo realizamos <span className="underline">5 auditorías este mes</span> y <span className="underline">máximo 1 por zona/pueblo</span>
+            </p>
+          </div>
+          
           <div className="flex items-center justify-center gap-3 mb-4">
             <Gift className="w-12 h-12 text-accent" />
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
