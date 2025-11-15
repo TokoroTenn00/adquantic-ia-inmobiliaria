@@ -37,6 +37,10 @@ const faqs = [
   {
     question: "¿Ofrecen servicios a agencias fuera de España?",
     answer: "Actualmente nos especializamos en el mercado español (especialmente Murcia, Valencia, Málaga y alrededores) porque conocemos bien el ecosistema local, la competencia y las regulaciones. Esto nos permite ofrecer estrategias más personalizadas y efectivas. Si tienes una agencia fuera de España, contáctanos para evaluar tu caso específico."
+  },
+  {
+    question: "¿Qué es el Home Staging y cómo puede ayudarme a vender más rápido?",
+    answer: "El Home Staging es la técnica de preparar y presentar una propiedad de forma estratégica para hacerla más atractiva a compradores potenciales. Incluye desde pequeñas mejoras estéticas hasta el uso de IA para generar tours virtuales mejorados y visualizaciones 3D. Nuestros servicios integran Home Staging digital potenciado por IA, permitiendo mostrar el potencial de una propiedad sin inversión física costosa. Propiedades con Home Staging se venden hasta un 73% más rápido y a mejor precio."
   }
 ];
 
