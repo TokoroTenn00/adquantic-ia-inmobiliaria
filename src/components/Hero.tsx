@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative overflow-hidden py-20 md:py-32">
+  return <section className="relative overflow-hidden py-20 md:py-32">
       {/* Dynamic gradient background with overlay */}
       <div className="absolute inset-0 gradient-hero" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent" />
@@ -13,7 +11,9 @@ const Hero = () => {
       
       {/* Animated floating elements */}
       <div className="absolute top-20 right-20 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 left-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-20 left-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{
+      animationDelay: '1s'
+    }} />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -33,21 +33,10 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-glow transition-all hover:scale-105"
-                onClick={() => window.open('https://calendly.com/adquantic/30min', '_blank')}
-              >
-                Agenda tu Reunión Gratuita
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-glow transition-all hover:scale-105" onClick={() => window.open('https://calendly.com/adquantic/30min', '_blank')}>Agenda consultoría Gratuita<ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6 transition-all hover:scale-105"
-                onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}
-              >
+              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6 transition-all hover:scale-105" onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}>
                 Auditoría Express - 47€
               </Button>
             </div>
@@ -73,16 +62,10 @@ const Hero = () => {
           {/* Image */}
           <div className="relative flex items-center">
             <div className="absolute inset-0 bg-accent/20 rounded-2xl blur-2xl" />
-            <img 
-              src={heroDashboard} 
-              alt="Dashboard de Marketing IA para Inmobiliarias" 
-              className="relative rounded-2xl shadow-strong border border-white/10"
-            />
+            <img src={heroDashboard} alt="Dashboard de Marketing IA para Inmobiliarias" className="relative rounded-2xl shadow-strong border border-white/10" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
