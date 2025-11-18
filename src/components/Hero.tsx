@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
 const Hero = () => {
-  return <section className="relative overflow-hidden py-20 md:py-32">
+  return <section className="relative overflow-hidden py-20 md:py-32 pt-32 md:pt-40">
       {/* Dynamic gradient background with overlay */}
       <div className="absolute inset-0 gradient-hero" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent" />
