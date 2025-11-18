@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Problems from "@/components/Problems";
 import Solution from "@/components/Solution";
@@ -13,6 +14,7 @@ import VoiceflowChat from "@/components/VoiceflowChat";
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <Navigation />
       <Hero />
       <Problems />
       <Solution />
