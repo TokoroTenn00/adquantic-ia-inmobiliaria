@@ -1,8 +1,17 @@
 import logo from "@/assets/adquantic-logo.png";
+import { Button } from "@/components/ui/button";
+import { Calendar } from "lucide-react";
 
 const Navigation = () => {
+  const scrollToCalendly = () => {
+    const calendlySection = document.getElementById('contacto');
+    if (calendlySection) {
+      calendlySection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border" style={{ backgroundColor: '#1C2A3C' }}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a 
@@ -17,6 +26,14 @@ const Navigation = () => {
               className="h-12 w-auto"
             />
           </a>
+          
+          <Button 
+            onClick={scrollToCalendly}
+            className="bg-accent hover:bg-accent/90 text-white font-semibold transition-all hover:scale-105 shadow-glow"
+          >
+            <Calendar className="w-4 h-4 mr-2" />
+            Consultoría Gratuita
+          </Button>
         </div>
       </div>
     </nav>
