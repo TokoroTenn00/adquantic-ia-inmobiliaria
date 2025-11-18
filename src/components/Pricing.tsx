@@ -40,8 +40,8 @@ const plans = [
   },
   {
     name: "Pack Premium",
-    price: "1497€",
-    period: "/mes",
+    price: "Consultar",
+    period: "",
     description: "Solución completa para dominar tu mercado local",
     features: [
       "Todo lo del Pack Intermedio",
