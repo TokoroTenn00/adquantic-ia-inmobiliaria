@@ -78,12 +78,12 @@ const LeadMagnet = () => {
             
             <div className="border-t border-white/20 pt-8 space-y-4">
               <div className="flex items-center justify-center gap-4">
-                <span className="text-3xl font-bold text-accent">47€</span>
-                <span className="text-white/70 line-through text-xl">194€</span>
+                <span className="text-3xl font-bold text-accent">39€</span>
+                <span className="text-white/70 line-through text-xl">186€</span>
                 <span className="bg-accent/30 px-3 py-1 rounded-full text-sm font-semibold">Ahorra 147€</span>
               </div>
               
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-12 py-6 shadow-glow transition-all hover:scale-105" onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}>Solicitar Auditoría Express</Button>
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-12 py-6 shadow-glow transition-all hover:scale-105" onClick={() => window.open('https://buy.stripe.com/5kQaEX7XTfJYcJP7YI2ZO04', '_blank')}>Solicitar Auditoría Express</Button>
               
               <p className="text-sm text-white/70">
                 ✓ Entrega en 48-72 horas • ✓ Sin compromiso • ✓ Garantía de satisfacción

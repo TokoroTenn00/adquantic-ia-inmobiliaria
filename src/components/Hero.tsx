@@ -36,8 +36,8 @@ const Hero = () => {
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-glow transition-all hover:scale-105" onClick={() => window.open('https://calendly.com/adquantic/30min', '_blank')}>Agenda consultoría Gratuita<ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               
-              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6 transition-all hover:scale-105" onClick={() => window.open('https://buy.stripe.com/5kQ9AT2DzapEeRXgve2ZO00', '_blank')}>
-                Auditoría Express - 47€
+              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6 transition-all hover:scale-105" onClick={() => window.open('https://buy.stripe.com/5kQaEX7XTfJYcJP7YI2ZO04', '_blank')}>
+                Auditoría Express - 39€
               </Button>
             </div>
             

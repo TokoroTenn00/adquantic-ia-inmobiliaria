@@ -31,7 +31,7 @@ const faqs = [
     answer: "No hay contratos de permanencia forzosa. Trabajamos mes a mes porque confiamos en que nuestros resultados te convencerán de seguir. Si en algún momento decides cancelar, puedes hacerlo sin penalización (solo avisando con 30 días de antelación)."
   },
   {
-    question: "¿Cómo funciona la Auditoría Express por 47€?",
+    question: "¿Cómo funciona la Auditoría Express por 39€?",
     answer: "Es una evaluación rápida pero profunda de tu presencia digital actual (web, redes, campañas). Te entregamos un reporte con 3 acciones inmediatas para mejorar tus resultados, más 3 ebooks de estrategias avanzadas (valorados en 147€). Es ideal para empezar a conocernos sin compromiso y ver mejoras rápidas."
   },
   {
