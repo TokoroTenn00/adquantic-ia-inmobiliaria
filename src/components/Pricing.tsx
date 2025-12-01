@@ -28,7 +28,6 @@ const plans = [
       "Gestión completa de redes (8 posts + 1 reel + 2 stories + 2 blogs)",
       "2 landing pages optimizadas con copy persuasivo",
       "2 campañas Meta Ads (compradores + vendedores)",
-      "CRM Básico incluido",
       "Home Staging de 4 viviendas",
       "Optimización SEO de nuevas propiedades",
       "Soporte prioritario por WhatsApp",
