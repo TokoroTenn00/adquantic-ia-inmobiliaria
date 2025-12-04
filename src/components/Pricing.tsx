@@ -20,8 +20,8 @@ const plans = [
   },
   {
     name: "Pack Intermedio",
-    price: "700€",
-    period: "/mes",
+    price: "694€",
+    period: "",
     description: "Para agencias que buscan crecimiento sostenido",
     features: [
       "Todo lo del Pack Básico",
