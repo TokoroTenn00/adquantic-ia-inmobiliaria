@@ -25,11 +25,11 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Tu competencia ya gana <span className="text-accent">leads con IA.</span> ¿Te vas quedar atrás?
+              El mercado inmobiliario ha cambiado. <span className="text-accent">Tu forma de captar clientes todavía no.</span>
             </h1>
             
             <p className="text-xl text-white/90 leading-relaxed">
-              Deja de perder oportunidades por no adaptarte al nuevo mercado inmobiliario. Te ayudamos a digitalizar tu agencia paso a paso, sin complicaciones y con resultados medibles desde las primeras semanas.
+              Si tu captación depende de portales, referencias o "lo que siempre ha funcionado", estás dejando dinero sobre la mesa.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
