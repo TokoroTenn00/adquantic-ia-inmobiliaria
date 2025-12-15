@@ -8,7 +8,7 @@ const plans = [
     period: "",
     description: "Ideal para empezar a generar leads digitales",
     features: [
-      "Landing page para comprador/vendedor",
+      "Landing page para propietarios",
       "1 campaña Meta Ads (presupuesto a tu elección)",
       "Home Staging de 2 viviendas",
       "Auditoría completa de web",
